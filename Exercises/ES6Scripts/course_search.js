@@ -59,6 +59,27 @@ console.log(`The title of ${secondSearchedCourseId} is ${course.Title} `);
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
 // What are the titles of the courses that cost $50 or less?
+let searchedCost = 50;
+let matching = [];
+
+function searchForCourse(value) {
+    return value.Fee <= searchedCost;
+}
+
+let cheapcourses = courses.filter(searchForCourse);
+console.log(cheapcourses);
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
 
 // What classes meet in "Classroom 1"?
+
+let searchedLocation = "Classroom 1";
+let classMatching = [];
+
+function searchClasses(value) {
+    return value.Location = searchedLocation;
+}
+
+let matchingCourseLocation = courses.filter(searchClasses);
+console.log(matchingCourseLocation);
+
