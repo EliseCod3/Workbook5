@@ -67,6 +67,7 @@ function searchForCourse(value) {
 }
 
 let cheapcourses = courses.filter(searchForCourse);
+console.log("The list of cheap courses:");
 console.log(cheapcourses);
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
@@ -81,5 +82,6 @@ function searchClasses(value) {
 }
 
 let matchingCourseLocation = courses.filter(searchClasses);
+console.log("List of courses in classroom 1:");
 console.log(matchingCourseLocation);
 
