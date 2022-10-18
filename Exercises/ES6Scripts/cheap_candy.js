@@ -11,6 +11,16 @@ let products = [
     {product: "KitKat", price: 4.66},
     // TODO: fill the array with 10 candies of various
     // price ranges
-    ];
+];
 
-    
+// Which candies costs less than $4.00?
+    // function getCheapCandy(poductItem) {
+    //     productItem.price < 4.00;
+    // }
+let cheaperCandies = products.filter((productItem) => productItem.price < 4.00);
+console.log(cheaperCandies);
+
+// Which candies has "M&M" its name?
+
+
+// Do we carry "Swedish Fish"?
