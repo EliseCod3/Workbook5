@@ -7,3 +7,15 @@ let cart = [
     {item: "Ice Cream - Vanilla", price: 6.81, quantity: 1},
     {item: "Apples", price: 0.66, quantity: 6}
 ];
+
+function grabItemName(object) {
+    return object.item;
+}
+
+function displayName(itemName) {
+    console.log(itemName);
+}
+
+let itemNames = cart.map(grabItemName);
+
+itemNames.forEach(displayName);
