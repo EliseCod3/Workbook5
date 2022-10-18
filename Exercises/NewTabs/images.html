@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images Page</title>
+    <style>
+        body {
+            background-color:palevioletred;
+        }
+        a {
+            color: darkmagenta;
+            font-size: 3rem;
+            text-decoration: line;
+            margin-bottom: 5rem;
+        }
+        img {
+            align-content: center;
+            border-radius: 3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        div{
+            margin: 3rem;
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
-    
-<a href="./index.html">Home Page</a><br>
+    <div class="container justify-content-center">
+        <a href="./index.html">Home Page</a>
+    </div>
 
-<img src="./Bunny Star.jpg" width="400px" height="800" alt="A bunnt floating with a star">
-<img src="./Teddy Bear Star.jpg" width="400px" height="800" alt="Teddy Bear floating with a star">
+<div class="container" style="display: flex;flex-direction:row;">
+    <img src="./Bunny Star.jpg" width="400px" height="800" alt="A bunnt floating with a star">
+    <img src="./Teddy Bear Star.jpg" width="400px" height="800" alt="Teddy Bear floating with a star">
+    <img src="./floating in water.jpg" width="400px" height="800" alt="White bunny floating in water on a tiny boat">
+</div>
 
 </body>
 </html>
