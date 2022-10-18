@@ -20,7 +20,7 @@ console.log(cheaperCandies);
 
 // Which candies has "M&M" its name?
 
-let mnmCandies = products.filter((product) => product.product.indexOf("M&Ms") !== -1 );
+let mnmCandies = products.filter((product) => product.product.includes("M&Ms"));
 console.log(" ");
 console.log(`M&M candies in stock: `);
 console.log(mnmCandies);
