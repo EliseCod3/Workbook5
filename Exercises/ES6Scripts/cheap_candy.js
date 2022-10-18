@@ -26,3 +26,7 @@ console.log(`M&M candies in stock: `);
 console.log(mnmCandies);
 
 // Do we carry "Swedish Fish"?
+let foundCandy = products.find((product) => product.product == "Swedish Fish");
+console.log(" ");
+console.log("What we have in stock:");
+console.log(foundCandy);
