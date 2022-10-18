@@ -1,3 +1,7 @@
+//GOAL OF REDUCE
+//[a,d,c,d]
+//a + b + c + d = total
+
 let ticketPackage = [
     {ticketType: "Senior", price: 49.99, numTickets: 1},
     {ticketType: "Adult", price: 79.99, numTickets: 2},
