@@ -13,7 +13,6 @@ function grabItemName(object) {
     return object.item;
 }
 
-
 function displayName(itemName) {
     console.log(itemName);
 }
