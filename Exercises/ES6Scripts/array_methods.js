@@ -13,17 +13,12 @@ function grabItemName(object) {
     return object.item;
 }
 
-function sortNames(a, b) {
-    if(a.item < b.item) return -1;
-    else if (a.item == b.item) return 0;
-    else return 1;
-};
 
 function displayName(itemName) {
     console.log(itemName);
 }
 
-let itemNames = cart.map(grabItemName);
+let itemNames = cart.map(grabItemName).sort();
 
 itemNames.forEach(displayName);
 console.log("-----------------------");
