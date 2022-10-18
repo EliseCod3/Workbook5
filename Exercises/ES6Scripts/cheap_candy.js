@@ -14,13 +14,15 @@ let products = [
 ];
 
 // Which candies costs less than $4.00?
-    // function getCheapCandy(poductItem) {
-    //     productItem.price < 4.00;
-    // }
 let cheaperCandies = products.filter((productItem) => productItem.price < 4.00);
+console.log(`Candies that cost less than $4.00: `);
 console.log(cheaperCandies);
 
 // Which candies has "M&M" its name?
 
+let mnmCandies = products.filter((product) => product.product.indexOf("M&Ms") !== -1 );
+console.log(" ");
+console.log(`M&M candies in stock: `);
+console.log(mnmCandies);
 
 // Do we carry "Swedish Fish"?
