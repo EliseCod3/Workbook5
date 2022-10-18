@@ -21,3 +21,12 @@ let academyMembers = [
     "Cowboy Boots"]
     },
 ];
+
+// Who is the Academy Member whose ID is 187?
+let foundMember = academyMembers.find((member) => member.memID == 187);
+console.log(foundMember.name);
+
+// Who has have been in at least 3 films?
+
+
+// Who has a name that starts with "Bob"?
