@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    
+    <div>
+        <img src="./images/Bee and Puppycat.jpg" />
+        <p>describe image above</p>
+    </div>
+
+    <div>
+        <img src="./images/Kirby Water.jpg" />
+        <p>describe image above</p>
+    </div>
+
+    <div>
+        <img src="./images/fox girl.jpg" />
+        <p>describe image above</p>
+    </div>
+
+    <script>
+        window.onload = design;
+
+        function design() {
+            const paragraphs = document.getElementsByTagName("p");
+            
+            Array.from(paragraphs).forEach(element => {
+                element.style.border = "2px solid black";
+            });
+        };
+    </script>
+</body>
+</html>
