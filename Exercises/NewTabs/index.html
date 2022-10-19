@@ -7,10 +7,31 @@
     <title>Home Page</title>
 </head>
 <body>
-    <button onclick="">Google</button>
-    <button onclick="">W3schools</button>
-    <button onclick="">Images</button>
+    <button id="googleBtn" onclick="openGoogle()">Google</button>
+    <button id="w3schoolBtn" onclick="openW3schools()">W3schools</button>
+    <button id="imagesBtn" onclick="openImages()">Images</button>
 
+    <script>
+        // window.onload = init;
+
+        // function init() {
+        //     const googleBtn = document.getElementById("googleBtn");
+        //     googleBtn.onclick = openGoogle;
+        // }
+
+        function openGoogle() {
+            window.open("https://www.google.com/");
+        }
+
+        function openW3schools() {
+            window.open("https://www.w3schools.com/")
+        }
+
+        function openImages() {
+            window.open("http://127.0.0.1:5500/Exercises/NewTabs/images.html")
+        }
+
+    </script>
 
 </body>
 </html>
