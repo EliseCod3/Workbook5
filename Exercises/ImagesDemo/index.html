@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="./roundImage.css">
     <title>Demo</title>
 </head>
 <body>
     
     <div>
-        <img class="roundedImg" src="./images/Bee and Puppycat.jpg" />
-        <p>describe image above</p>
+        <img src="./images/Bee and Puppycat.jpg" />
+        <p>Look like a cat, but smell like a dog</p>
     </div>
 
     <div>
@@ -29,10 +29,16 @@
 
         function design() {
             const paragraphs = document.getElementsByTagName("p");
-            
+            const image = document.getElementsByTagName("img");
+
             Array.from(paragraphs).forEach(element => {
                 element.style.border = "2px solid black";
             });
+
+            for (const element of image) {
+                element.classList.add("roundedImg");
+                element.alt = 'cartoons';
+            }
         };
     </script>
 </body>
