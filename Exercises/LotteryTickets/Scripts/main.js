@@ -19,9 +19,21 @@ window.onload = () => {
 };
 
 function loadWinningTicketsTable() {
-  document.getElementById("winningTicketsTblBody")
-  for (let i = 0; i < winningTickets.length; i++) {
-      const Ticket = winningTickets[i];
-      
-  }
+  const winningTicketsTblBody = document.getElementById("winningTicketsTblBody");
+  for (const ticket of winningTickets) {
+    buildTicketRow(winningTicketsTblBody, ticket);
+  };
+}
+
+function buildTicketRow(tableBody, ticket) {
+    let row = tableBody.insertRow(-1);
+    
+    let cell1 = row.insertCell(0);
+    cell1.innerText = ticket.tixNum;
+    
+    let cell2 = row.insertCell(0);
+    cell2.innerText = ticket.prize;
+    
+    let cell3 = row.insertCell(0);
+    cell3.innerText = ticket.expires;
 }
