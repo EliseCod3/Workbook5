@@ -24,3 +24,7 @@ label{
 #clear-btn {
     background-color: crimson;
 }
+.rounded{
+    border-radius: 55%;
+    border: 3px, solid, black;
+}

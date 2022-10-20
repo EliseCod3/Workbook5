@@ -33,6 +33,7 @@ function addNewImage() {
     img.alt = imageFile.name;
 
     imageDiv.appendChild(img);
+    img.classList.add("rounded")
 }
 
 function clearImages() {
