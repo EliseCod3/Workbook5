@@ -1,16 +1,17 @@
 "use strict";
 
 let imageFiles = [
-    {path: "./images/Princess Bubblegum.jpg/300/200", name: "Princess Bubblegum",},
-    {path: "./images/kirby chopsticks.jpg/300/200", name: "Kirby",},
-    {path: "./images/Kakashi.jpg/300/200", name: "Kakashi",}
+    {path: "./images/Princess Bubblegum.jpg", name: "Princess Bubblegum",},
+    {path: "./images/kirby chopsticks.jpg", name: "Kirby",},
+    {path: "./images/Kakashi.jpg", name: "Kakashi",}
 ];
 
 const characterList = document.getElementById("character-List");
+const imageDiv = document.querySelector("#imagesDiv");
 
 function loadCharacterList() {
     imageFiles.forEach((imageFile) => {
-        let option = new Option(imageFile.name, imageFile.path);
+        let option = new Option(imageFile.name, imageFile.name);
         characterList.appendChild(option);
     });
 }
@@ -26,7 +27,15 @@ function addNewImage() {
     //     }
     // });
     let imageFile = imageFiles.find((f) => f.name === selectedValue);
-    console.log(imageFile.path);
+    let img = document.createElement("img");
+    img.src = imageFile.path;
+    img.alt = imageFile.name;
+
+    imageDiv.appendChild(img);
+}
+
+function clearImages() {
+    imageDiv.innerHTML = " "
 }
 
 window.onload = () => {
@@ -34,4 +43,7 @@ window.onload = () => {
 
     const addBtn = document.getElementById("add-btn");
     addBtn.onclick = addNewImage;
-}
+
+    const clearBtn = document.getElementById("clear-btn");
+    clearBtn.onclick = clearImages;
+};
