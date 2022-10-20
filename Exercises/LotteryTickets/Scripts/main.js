@@ -22,7 +22,7 @@ function loadWinningTicketsTable() {
   const winningTicketsTblBody = document.getElementById("winningTicketsTblBody");
   for (const ticket of winningTickets) {
     buildTicketRow(winningTicketsTblBody, ticket);
-  };
+  }
 }
 
 function buildTicketRow(tableBody, ticket) {
