@@ -5,6 +5,7 @@ let imageFiles = [
     {path: "./images/kirby chopsticks.jpg", name: "Kirby",},
     {path: "./images/Kakashi.jpg", name: "Kakashi",},
     {path: "./images/Red Riot.jpg", name: "Kirishima Eijiro",},
+    [path, "./images/"]
 ];
 
 const characterList = document.getElementById("character-List");
